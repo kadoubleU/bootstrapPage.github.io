@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawliet Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="hero-nav-container">
+            <nav class="flex flex-col lg:flex-row lg:justify-between">
+                <div class="nav px-[20px] lg:px-[165px] py-[32px] flex justify-between items-center">
+                    <div class="logo-column">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <i class="menu-toggle-btn fas fa-bars cursor-pointer"></i>
+                </div>
+                <div class="mobile-nav flex-col lg:flex-row text-center gap-[10px] md:px-[165px] lg:py-[32px]">
+                    <ul class="flex flex-col lg:flex-row lg:gap-[10px]">
+                        <li class="li-style">Contact</li>
+                        <li class="li-style">Testimortals</li>
+                        <li class="li-style">About</li>
+                        <li class="li-style">Terms</li>
+                        <li><i class="li-style search-btn fa-solid fa-magnifying-glass"></i></li>
+                        <form class="example"">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search "></i></button>
+                        </form>
+                    </ul>
+                </div>
+                <div class="site-nav flex-col lg:flex-row text-center gap-[10px] lg:px-[165px] lg:py-[32px]">
+                    <div class="menu flex flex-row">
+                        <ul class="flex flex-col lg:flex-row lg:gap-[56px]">
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]"> Contact</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">Testimortals</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">About</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">Terms</a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="pl-[100px] li-style search-btn fa-solid fa-magnifying-glass cursor-pointer"></i></li>
+                        </ul>
+                    </div>
+                    
+                    <form class="example flex flex-row items-center bg-[#094B72]">
+                        <input type="text" placeholder="Search.." name="search" class="bg-[#094B72] text-white p-[10px] mt-[10px] w-[450px]"> <br>
+                         <button type="submit"><i class="fa fa-search bg-[#094B72] text-white"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-content-container flex flex-col lg:flex-row px-[20px] lg:px-[165px] container mx-auto pt-[30px] lg:pt-[135px] relative items-center lg:h-[1024px]">
+            <div class="left-column">
+                <div class="row-1 mb-[115px]">
+                    <div class="small-text-container bg-[#E7F6FF] flex flex-row gap-[9px] items-center max-w-[500px] pl-[6px] pr-[21px] rounded-3xl">
+                        <span class="bg-[#094B72] text-white w-[86px] h-[28px] rounded-3xl flex justify-center items-center my-[6px]">New</span>
+                        <p>Stay connected to the upcoming & Recent jobs</p>
+                    </div>
+                    <div class="other-content flex flex-col mt-[16px] gap-[42px]">
+                        <h1 class="font-style-h1 text-[35px] lg:text-[90px] font-bold text-[#094B72] z-10 max-w-[720px] leading-9  lg:leading-[90px]">Your Solution Legal Consultacy</h1>
+
+                        <p class="small-text-container text-2xl max-w-[590px]">We are here to help you take care of your legality with the best service especially for you.</p>
+                        <button class="rounded-[8px] uppercase bg-[#094B72] w-[190px] h-[80px] text-gray-200 hover:bg-[#E7F6FF] hover:text-[#094B72] hover:border-[3px] hover:border-[#094B72]">Get started</button>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="logos-description">
+                        <p class="small-text-container text-gray-500 text-[22px]">Trusted by 10+ companies in indonesia</p>
+                    </div>
+                    <div class="logos-container flex flex-col mt-[33px] mb-[46px] gap-[20px] justify-between max-w-[200px]">
+                        <div class="logos-row1 flex flex-row gap-[65px] justify-between">
+                            <img class="" src="images/Airbnb Logo.png" alt="Airbnb Logo">
+                            <img class="w-[80px] h-[23px]" src="images/Hubspot Logo.png" alt="Hubspot Logo">
+                        </div>
+                        <div class="logos-row2 flex flex-row gap-[30px] justify-between">
+                            <img class="" src="images/Microsoft Logo.png" alt="">
+                            <img class="" src="images/Google Logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column lg:absolute lg:top-0 lg:right-0 relative flex flex-col items-center">
+                <img src="images/hero-image.png" alt="" class="z-0">
+                <div class="person-box bg-white text-center min-w-[344px] rounded-xl shadow-2xl shadow-gray-300 absolute bottom-[-70px] h-[114px] flex flex-col items-center justify-center">
+                    <p class="text-[#33475B] font-bold text-2xl	small-text-container">Tiara Andini</p>
+                    <p class="small-text-container text-base font-medium text-[#87898C]">-Lawyer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+    <div class="page-content">
+        <section class="why-help">
+            <div class="why-help-section pb-[126px]">
+                <div class="container mx-auto flex flex-col justify-between lg:flex-row px-[20px] lg:px-[165px] gap-[52px]">
+                    <div class="col-1 lg:w-[380px] 2xl:w-auto pt-[174px]">
+                        <h2 class="font-style-h1 font-bold text-[30px] md:text-[40px] text-gray-700 pb-[30px]">Why do we help with legalization?</h2>
+                        <p class="poppins-font text-gray-500 text-xl max-w-[365px]">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
+                    </div>
+
+                    <div class="col-2 pt-[124px]">
+                        <div class="cards-container w-full pt-[20px] flex flex-col gap-[30px]">
+                            <div class="cards-row flex flex-col md:flex-row gap-[30px]">
+                                <div class="card p-[24px] bg-white rounded-xl w-auto flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                    <div>
+                                    <img src="images/Circle Layer.png" alt="">
+                                    </div>
+                                    <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                    <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                                </div>
+                                <div class="card p-[24px] bg-white rounded-xl w-auto flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                    <div>
+                                    <img src="images/Circle Layer.png" alt="">
+                                    </div>
+                                    <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                    <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                                </div>
+                            </div>
+
+                            <div class="cards-row flex flex-col md:flex-row gap-[30px]">
+                                <div class="card p-[24px] bg-white rounded-xl w-auto flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                    <div>
+                                    <img src="images/Circle Layer.png" alt="">
+                                    </div>
+                                    <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                    <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                                </div>
+                                <div class="card p-[24px] bg-white rounded-xl w-auto flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                    <div>
+                                    <img src="images/Circle Layer.png" alt="">
+                                    </div>
+                                    <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                    <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counts">
+            <div class="counts-section bg-[#094B72] pt-[53px] pb-[73px] px-[20px] lg:px-[165px]">
+                <div class="text-row container mx-auto">
+                    <h2 class="font-style-h1 text-white text-[48px] font-black leading-[50px] text-center pb-[12px]">Some count that matters</h2>
+                    <p class="poppins-font text-white text-center text-lg font-normal">Our achievement in the journey depicted in numbers</p>
+                </div>
+
+                <div class="statistics container mx-auto pt-[48px]">
+                    <div class="flex flex-col lg:flex-row justify-center items-center">
+                        <div class="col flex flex-col lg:pr-[108px] lg:border-r-[1px] border-[#fff] text-center">
+                            <div class="number">
+                                <p class="poppins-font font-extrabold text-[48px] text-white">30</p>
+                            </div>
+                            <div class="num-description">
+                                <p class="poppins-font text-lg font-normal leading-[32px] text-white">Clients</p>
+                            </div>
+                        </div>
+
+                        <div class="col flex flex-col lg:pl-[108px] lg:pr-[108px] lg:border-r-[1px] border-[#fff] text-center pt-[50px] lg:pt-0">
+                            <div class="number">
+                                <p class="poppins-font font-extrabold text-[48px] text-white">300+</p>
+                            </div>
+                            <div class="num-description">
+                                <p class="poppins-font text-lg font-normal leading-[32px] text-white">Taken business legalities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col flex flex-col lg:pl-[108px] text-center pt-[50px] lg:pt-0">
+                            <div class="number">
+                                <p class="poppins-font font-extrabold text-[48px] text-white">8</p>
+                            </div>
+                            <div class="num-description">
+                                <p class="poppins-font text-lg font-normal leading-[32px] text-white">Years of Journey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial bg-[#F2F7FF] pb-[69px] px-[20px] lg:px-[165px]">
+            <div class="text-row container mx-auto pt-[61px] pb-[51px]">
+                <h2 class="font-style-h1 text-black text-[48px] font-bold leading-[50px] text-center pb-[12px]">Clients Testimonial</h2>
+            </div>
+
+            <div class="reviews flex flex-col lg:flex-row gap-[30px] justify-center items-start relative">
+                <div class="review-card">
+                    <div class="review-box p-[32px] bg-white text-center shadow-2xl rounded-2xl lg:h-[220px]">
+                        <h3 class="text-[#1f2937] pb-[10px] text-lg poppins-font font-medium leading-[28px]">Incredible Experience</h3>
+                        <p class="max-w-[476px] poppins-font text-[#4b5563] tracking-wider leading-[24px] text-sm">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                    </div>
+                    <div class="author-box pt-[30px] flex flex-row justify-center items-center gap-[16px]">
+                        <div class="image">
+                            <img src="images/client.png" alt="Client">
+                        </div>
+                        <div class="autor-info">
+                            <p class="text-lg font-bold inter-font leading-[28px] text-gray-800">Anya Tailor Joy</p>
+                            <p class="text-gray-600 text-sm inter-font leading-[24px]">CEO, SF Industires</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-box p-[32px] bg-white text-center shadow-2xl rounded-2xl lg:h-[220px]">
+                        <h3 class="text-[#1f2937] pb-[10px] text-lg poppins-font font-medium leading-[28px]">Dependable, Responsive, Professional Partner</h3>
+                        <p class="max-w-[476px] poppins-font text-[#4b5563] tracking-wider leading-[24px] text-sm">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations.</p>
+                    </div>
+                    <div class="author-box pt-[30px] flex flex-row justify-center items-center gap-[16px]">
+                        <div class="image">
+                            <img src="images/client.png" alt="Client">
+                        </div>
+                        <div class="autor-info">
+                            <p class="text-lg font-bold inter-font leading-[28px] text-gray-800">Sri Alam</p>
+                            <p class="text-gray-600 text-sm inter-font leading-[24px]">CEO, Membagongkan GROUP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-section">
+            <div class="call-section-container flex flex-col lg:flex-row gap-[21px] items-center">
+                <div class="call-text-container container px-[20px] lg:pl-[165px] pb-[40px]">
+                    <h2 class="text-gray-700 pt-[36px] pb-[20px] text-[48px] font-style-h1 font-bold">Complex Questions?</h2>
+                    <p class="text-2xl poppins-font leading-[36px] tracking-wider font-normal text-gray-600 pb-[20px]">Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
+                    <button class="bg-[#094B72] flex flex-row justify-center items-center gap-[17px] px-[37px] py-[14px] rounded-[8px] text-gray-100 text-[22px] tracking-wider leading-[36px] font-semibold poppins-font"><img src="images/call.png" alt=""> Call now</button>
+                </div>
+
+                <div class="call-image-container">
+                    <div class="image pr-[93px]">
+                        <img src="images/man-with-phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </article>
+
+    <footer>
+        <div class="footer-container">
+            <div class="row bg-[#094B72] flex flex-col lg:flex-row justify-between px-[20px] lg:px-[165px] pb-[91px]">
+                <div class="logo-col pt-[73px]">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-nav pt-[100px] flex flex-col lg:flex-row gap-[80px]">
+                    <div class="footer-nav-col flex flex-col gap-[32px]">
+                        <h6 class="text-gray-100 inter-font text-xl leading-[30px] font-medium">Product</h6>
+                        <ul class="flex flex-col gap-[12px] inter-font text-base text-gray-200 leading-6">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col flex flex-col gap-[32px]">
+                        <h6 class="text-gray-100 inter-font text-xl leading-[30px] font-medium">Company</h6>
+                        <ul class="flex flex-col gap-[12px] inter-font text-base text-gray-200 leading-6">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col flex flex-col gap-[32px]">
+                        <h6 class="text-gray-100 inter-font text-xl leading-[30px] font-medium">Support</h6>
+                        <ul class="flex flex-col gap-[12px] inter-font text-base text-gray-200 leading-6">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-[#004D7B] py-[24px] flex flex-col lg:flex-row justify-between items-center px-[20px] lg:px-[165px]">
+                <div class="copywright-container">
+                    <p class="text-gray-300 pb-[22px] lg:pb-0 inter-font text-sm leading-6">&copy; 2021 Lawliet. All rights reserved</p>
+                </div>
+                <div class="social-buttons-container flex flex-row gap-[16px] items-center">
+                    <div class="social-icon-button">
+                        <img src="images/instagram-icon.png" alt="">
+                    </div>
+
+                    <div class="social-icon-button">
+                        <img src="images/social.png" alt="">
+                    </div>
+
+                    <div class="social-icon-button">
+                        <img src="images/twitter.png" alt="">
+                    </div>
+
+                    <div class="social-icon-button">
+                        <img src="images/youtube.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+           $(".mobile-nav").css("display", "none");
+       })
+       $(".menu-toggle-btn").click(function() {
+           $(this).toggleClass("fa-times");
+           $(".mobile-nav").slideToggle();
+       });
+   </script>
+
+   <!-- SearchBar -->
+   <script>
+     $(document).ready(function() {
+           $(".example").css("display", "none");
+       })
+        
+        $(".search-btn").click(function() {
+           $(this).toggleClass("fa-times");
+           $(".example").slideToggle();
+       });
+   </script>
+</body>
+</html>
