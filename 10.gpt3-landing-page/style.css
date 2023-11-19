@@ -1,0 +1,936 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #040C18;
+}
+
+/* HEADER STYLES START */
+
+header {
+    position: relative;
+    /* background-image: url(img/blur-01.svg);
+    background-size: cover; */
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-radius: 1013px;
+    background: #002853;
+    filter: blur(282px);
+    width: 1013px;
+    height: 1013px;
+    z-index: 1;
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    border-radius: 701px;
+    background: #072D56;
+    filter: blur(282px);
+    width: 701px;
+    height: 496px;
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7.1rem;
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
+    z-index: 2;
+    
+}
+
+.logo {
+    fill: #FFF;
+}
+
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 3.4rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+
+.header-nav a:hover {
+    color: #FF4820;
+}
+
+.user-buttons {
+    display: flex;
+}
+
+.user-buttons a {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.signUp-btn {
+    background-color: #FF4820;
+    padding: 1.6rem 4.3rem;
+    border-radius: 0.5rem;
+}
+
+.signIn-btn:hover {
+    color: #FF4820;
+}
+
+.signUp-btn:hover {
+    background-color: #052D56;
+}
+
+.header-columns {
+    position: relative;
+    margin-top: 12rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.header-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+
+}
+
+.header-left-content h2 {
+    font-family: Manrope;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 7.5rem; /* 120.968% */
+    letter-spacing: -0.248rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: gradient-text-animation 3s alternate infinite;
+}
+
+@keyframes gradient-text-animation {
+    from {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    to {
+      background-position: 0 50%;
+    }
+  }  
+
+.header-description {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    padding-left: 3.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    background: #052D56;
+    border: none;
+    width: 100%;
+    color: #3D6184;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+:-ms-input-placeholder, ::-webkit-input-placeholder {
+    color: #3D6184;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe-btn {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    max-width: 17.4rem;
+    background: #FF4820;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 2.13rem 2.6rem;
+    cursor: pointer;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.subscribe-btn:hover {
+    background-color: #052D56;
+}
+
+.header-group-users {
+    display: flex;
+    align-items: center;
+
+}
+
+.user-photo-position {
+    display: inline-block;
+    margin-left: -1rem;
+}
+
+.users-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.7611rem; /* 470.134% */
+    width: 35.997px;
+    height: 35.997px;
+    flex-shrink: 0;
+    background-color: #13DED2;  
+    border-radius: 50%;
+    border: solid 0.3rem #fff;
+    margin-left: -1rem;
+}
+
+.users-description {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.76rem;
+    margin-left: 1.3rem;
+}
+
+/* .header-right-image {
+
+} */
+
+.header-right-image {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* HEADER STYLES END */
+
+/* COMPANIES LOGOS STYLE START */
+
+.companies-logos {
+    position: relative;
+    margin-top: 12rem;
+    padding-bottom: 12.7rem;
+    z-index: 2;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4.648rem;
+}
+
+.logos img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* COMPANIES LOGOS STYLE END */
+
+/* chatGpt-info STYLES START */
+
+.chatGpt-info {
+    background: #042C54;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 20.1rem;
+    padding-top: 5.7rem;
+    padding-bottom: 6.3rem;
+    padding-left: 6.1rem;
+    padding-right: 6.1rem;
+    position: relative;
+}
+
+.chatGpt-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 9.1rem;
+}
+
+.info-box-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15.4rem;
+}
+
+.chatGpt-info::before {
+    position: absolute;
+    content: "";
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 581px;
+    background: #0F4279;
+    filter: blur(60px);
+    width: 18.1rem;
+    height: 14.1rem;
+    top: 0rem;
+    left: 0rem;
+}
+
+
+.info-box-heading h3 {
+    position: relative;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3rem;
+    letter-spacing: -0.096rem;
+    width: 15.1rem;
+}
+
+.info-box-heading h3::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(103deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;
+    width: 38px;
+    height: 3px;
+    top: -1rem;
+    left: 0;
+}
+
+.info-box-description {
+    align-self: flex-end;
+}
+
+.info-box-description p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+}
+
+.info-heading-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-heading-box h2{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 132.353% */
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 47.2rem;
+}
+
+.info-heading-box p {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    cursor: pointer;
+}
+
+.info-heading-box p:hover {
+    color: #AE67FA;
+}
+
+.info-box-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    max-width: 33.4rem;
+    }
+
+/* chatGpt-info STYLES END */
+
+/* OPTIONS STYLES START */
+
+.options-section {
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 13.8rem;
+    
+}
+
+.option-left-col h2{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 132.353% */
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 42.6rem;
+    padding-bottom: 3.4rem;
+}
+
+.option-left-col a {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-decoration: none;
+}
+
+.option-left-col a:hover {
+    color: #AE67FA;
+}
+
+.option-right-col {
+    display: flex;
+    flex-direction: row;
+    gap: 7.4rem;
+    max-width: 60rem;
+}
+
+.right-col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5.7rem;
+}
+
+.info-box-heading .option-heading {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.4rem; /* 133.333% */
+    letter-spacing: -0.72px;
+}
+
+.right-col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.right-col-2 p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 171.429% */
+}
+
+
+/* OPTIONS STYLES END */
+
+/* MY APPS SECTION STYLES START */
+
+.my-apps {
+    margin-top: 7.7rem;
+    margin-left: 17.7rem;
+    margin-bottom: 14.5rem;
+    margin-right: 21.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.9rem;
+
+}
+
+.my-apps-left-col img {
+    max-width: 100%;
+}
+
+.my-apps-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    justify-content: center;
+    padding-top: 20rem;
+}
+
+.my-apps-top-link a {
+    color: #71E5FF;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    text-decoration: none;
+
+}
+
+.my-apps-top-link a:hover {
+    color: #F49867;
+}
+
+.my-apps-right-col h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; /* 132.353% */
+    background: linear-gradient(173deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-apps-paragraph {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    max-width: 47.9rem;
+}
+
+.my-apps-bottom-link a {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-decoration: none;
+}
+
+.my-apps-bottom-link a:hover {
+    color: #71E5FF;
+}
+
+/* MY APPS SECTION STYLES END */
+
+
+/* CTA SECTION STYLES START */
+
+.cta {
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 15.4rem;
+    padding: 4.6rem;
+    border-radius: 1.7rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-link {
+    color: #0E0E0E;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 250% */
+    text-decoration: none;
+}
+
+.cta-text h3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 187.5% */
+}
+
+.cta-button {
+    display: inline-block;
+    border-radius: 4rem;
+    background: #000;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 166.667% */
+    text-decoration: none;
+    padding: 1.2rem 4.5rem;
+    text-wrap: nowrap;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #000;
+    border: 0.2rem solid #000;
+}
+
+/* CTA SECTION STYLES END */
+
+/* BLOGGING SECTION STYLES START */
+.blogging-section {
+   margin-left: 13.5rem;
+   margin-right: 13.5rem;
+   margin-bottom: 15.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.blogger-container-heading {
+    font-family: Manrope;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 7.5rem; /* 120.968% */
+    letter-spacing: -0.248rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 11.5rem;
+}
+
+.blog-container-content {
+    display: flex;
+    gap: 5rem;
+}
+
+.blog-left-col {
+    background: #042C54;
+    object-fit: cover;
+    max-width: fit-content;
+    padding-bottom: 2.5rem;
+
+}
+
+.blog-left-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 19rem;
+}
+
+.post-header {
+    padding-left: 2.5rem;
+}
+
+.post-header p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2 rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+    padding-top: 3.2rem;
+}
+
+.post-header h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 2.51rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.29rem; /* 120.619% */
+}
+
+.read-more-btn {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+    text-decoration: none;
+    padding-left: 2.5rem;
+}
+
+.blog-right-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+}
+
+.post {
+    background: #042C54;
+    
+}
+
+.blog-right-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 2rem;
+    padding-left: 2.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 1.3rem;
+}
+
+.post-header-small p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+}
+
+.post-header-small h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.93rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.03rem; /* 156.804% */
+}
+
+.read-more-btn-small {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 11.649px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34.947px; /* 300% */
+    text-decoration: none;
+    padding-top: 1.2rem;
+}
+
+/* BLOGGING SECTION STYLES END */
+
+/* FOOTER STYLES START */
+
+footer {
+    background: #031B34;
+    position: relative;
+    z-index: 2;
+}
+
+.footer {
+    padding-top: 17.5rem;
+    padding-bottom: 2.7rem;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading h2 {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px; /* 120.968% */
+    letter-spacing: -2.48px;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6.4rem;
+    max-width: 82.1rem;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-btn a {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #FFF;
+    padding: 2.2rem 2.4rem;
+    text-decoration: none;
+}
+
+.footer-btn a:hover {
+    border-image: linear-gradient(#AE67FA, #F49867) 30;
+}
+
+.footer-content {
+    margin-top: 18.5rem;
+    margin-left: 20.5rem;
+    margin-right: 20.5rem;
+    padding-bottom: 8.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-address {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-links-heading {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 3.6rem;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 2.6rem;
+}
+
+.footer-col ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-col ul a:hover {
+    color: #F49867;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.7rem;
+}
+
+.copyright p {
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* FOOTER STYLES END */
+
+/* RESPONSIVE LAYOUT START */
+
+
+
+/* RESPONSIVE LAYOUT END */
