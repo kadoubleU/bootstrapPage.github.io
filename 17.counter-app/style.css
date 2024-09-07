@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("trakian-tomb.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 12px #000000;
+}
+
+.hero h2 {
+  text-shadow: 2px 2px 12px #000000;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  text-shadow: 2px 2px 12px #000000;
+  font-size: 24px;
+}
+
+#start-count {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px;
+  width: 100px;
+  background-color: #000000;
+  border-radius: 5px;
+  border: none;
+}
+
+#increment:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+#save:hover {
+  background-color: #d97903;
+  cursor: pointer;
+}
+
+#prev-tourists-num {
+  margin-top: 20px;
+}
