@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <title>Basketball Scoreboard App</title>
+  </head>
+  <body onclick="winner()">
+    <div class="body">
+      <div class="scoreboard">
+        <div class="columns">
+          <div class="col">
+            <h2>Home</h2>
+            <div class="box">
+              <p id="home-result">0</p>
+            </div>
+            <div class="buttons">
+              <button id="add1h" onclick="add1h()">+1</button>
+              <button id="add2h" onclick="add2h()">+2</button>
+              <button id="add3h" onclick="add3h()">+3</button>
+            </div>
+          </div>
+
+          <div class="col">
+            <h2>Guest</h2>
+            <div class="box">
+              <p id="guest-result">0</p>
+            </div>
+            <div class="buttons">
+              <button id="add4g" onclick="add4g()">+1</button>
+              <button id="add5g" onclick="add5g()">+2</button>
+              <button id="add6g" onclick="add6g()">+3</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-game">
+          <button id="reset" onclick="newGame()">New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
