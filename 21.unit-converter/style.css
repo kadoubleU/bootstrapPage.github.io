@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  background-color: #6943ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 28px;
+  color: #ffffff;
+  padding: 33px 50px;
+  line-height: 38px;
+  font-weight: 700;
+  letter-spacing: -3%;
+}
+
+#input-number {
+  background-color: transparent;
+  border: 2px solid #b295ff;
+  font-size: 58px;
+  font-weight: 900;
+  width: 117px;
+  height: 83px;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  margin-bottom: 26px;
+  border-radius: 5px;
+}
+
+#input-number:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ffffff;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffffff;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+#convert-btn,
+#clear-btn {
+  margin-bottom: 24px;
+  width: 117px;
+  height: 42px;
+  text-align: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#convert-btn:hover,
+#clear-btn:hover {
+  background-color: #e5e5e5;
+  color: #323232;
+  border: 1px solid #323232;
+}
+
+.container-body {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px;
+  height: 100vh;
+}
+
+.metric {
+  background-color: #ffffff;
+  padding: 31px 77px;
+  text-align: center;
+  width: 80%;
+}
+
+.metric h2 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5a537b;
+  padding-bottom: 9px;
+}
+
+.metric p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #353535;
+}
